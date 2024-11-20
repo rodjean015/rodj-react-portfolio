@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rodjean015.io/rodj-react-portfolio/static/css/main.4a1767a0.css",
+    "main.js": "/rodjean015.io/rodj-react-portfolio/static/js/main.736234ac.js",
+    "static/media/profile_pic.png": "/rodjean015.io/rodj-react-portfolio/static/media/profile_pic.f6fab6265f4bcbc574ba.png",
+    "static/media/baccarat_bot.png": "/rodjean015.io/rodj-react-portfolio/static/media/baccarat_bot.25e612e311153872eeb6.png",
+    "static/media/lineage_bot.png": "/rodjean015.io/rodj-react-portfolio/static/media/lineage_bot.256bf2844d8595ba8cc2.png",
+    "static/media/blackjack_bot.png": "/rodjean015.io/rodj-react-portfolio/static/media/blackjack_bot.8e92dbcfd4e02faf6639.png",
+    "static/media/poker_ai.png": "/rodjean015.io/rodj-react-portfolio/static/media/poker_ai.b5981c4a4fbe985dc168.png",
+    "static/media/lineage_logs.png": "/rodjean015.io/rodj-react-portfolio/static/media/lineage_logs.b3987063d33c546c8317.png",
+    "static/media/poker_api.png": "/rodjean015.io/rodj-react-portfolio/static/media/poker_api.d05659e89cb0fc7d81fe.png",
+    "index.html": "/rodjean015.io/rodj-react-portfolio/index.html",
+    "main.4a1767a0.css.map": "/rodjean015.io/rodj-react-portfolio/static/css/main.4a1767a0.css.map",
+    "main.736234ac.js.map": "/rodjean015.io/rodj-react-portfolio/static/js/main.736234ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a1767a0.css",
+    "static/js/main.736234ac.js"
+  ]
+}
