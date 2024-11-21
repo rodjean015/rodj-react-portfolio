@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiLaravel, SiJavascript, SiReact, SiTailwindcss, SiTensorflow, SiScikitlearn, SiOpencv, SiPandas, SiNumpy, SiFlask, SiDjango, SiGooglecloud, SiDocker, SiVuedotjs, SiBootstrap, SiAmazonwebservices , SiMicrosoftazure } from 'react-icons/si';
+import { SiLaravel, SiJavascript, SiReact, SiTailwindcss, SiTensorflow, SiScikitlearn, SiOpencv, SiPandas, SiNumpy, SiFlask, SiDjango, SiGooglecloud, SiDocker, SiVuedotjs, SiBootstrap, SiAmazonwebservices , SiMicrosoftazure, SiMysql, SiMongodb} from 'react-icons/si';
 import { FaNodeJs, FaHtml5, FaCss3Alt, FaPython } from 'react-icons/fa';
 import { SiArduino } from 'react-icons/si';
 
@@ -27,6 +27,10 @@ const skills = [
   { icon: <SiAmazonwebservices  className="text-orange-500 text-2xl" />, label: 'AWS' },
   { icon: <SiMicrosoftazure className="text-blue-600 text-2xl" />, label: 'Azure' },
   { icon: <SiLaravel className="text-red-600 text-2xl" />, label: 'Laravel' },
+  { icon: <SiMysql className="text-blue-600 text-2xl" />, label: 'MySQL' },
+  { icon: <SiMongodb className="text-green-600 text-2xl" />, label: 'MongoDB' },
+  // Alternatively, use PostgreSQL instead:
+  // { icon: <SiPostgresql className="text-blue-600 text-2xl" />, label: 'PostgreSQL' },
 ];
 
 function SkillsSection() {
