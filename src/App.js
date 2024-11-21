@@ -7,7 +7,7 @@ import AboutSection from './components/AboutSection'; // Import AboutSection Com
 import ProjectsSection from './components/ProjectsSection'; // Import ProjectsSection Component
 import ContactSection from './components/ContactSection'; // Import ContactSection Component
 import LoadingPage from './components/LoadingPage'; // Import the LoadingPage component
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Update to v6
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Change to HashRouter
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <Router basename="/rodj-react-portfolio">
+    <Router>
       <div className={`${darkMode ? 'dark' : ''} min-h-screen`}>
         <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 relative">
           {/* Navbar Component */}

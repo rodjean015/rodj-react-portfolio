@@ -1,4 +1,3 @@
-// Navbar.js
 import React from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
@@ -10,9 +9,7 @@ const Navbar = ({ darkMode, handleDarkModeToggle, menuOpen, handleMenuToggle, li
     <>
       {/* Main Navbar */}
       <header
-        className={`${
-          darkMode ? 'bg-gray-900' : 'bg-[#375e7e]'
-        } shadow-md transition-transform duration-300 z-10 fixed top-0 left-0 right-0 ${
+        className={`${darkMode ? 'bg-gray-900' : 'bg-[#375e7e]'} shadow-md transition-transform duration-300 z-10 fixed top-0 left-0 right-0 ${
           showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'
         }`}
       >
