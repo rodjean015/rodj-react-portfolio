@@ -7,7 +7,7 @@ import AboutSection from './components/AboutSection'; // Import AboutSection Com
 import ProjectsSection from './components/ProjectsSection'; // Import ProjectsSection Component
 import ContactSection from './components/ContactSection'; // Import ContactSection Component
 import LoadingPage from './components/LoadingPage'; // Import the LoadingPage component
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Update to v6
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
