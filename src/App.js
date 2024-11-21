@@ -79,17 +79,8 @@ function App() {
 
           <main>
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <AboutSection />
-                    <ProjectsSection />
-                    <Skills />
-                    <ContactSection />
-                  </>
-                }
-              />
+              {/* Set About Section as the homepage */}
+              <Route path="/" element={<AboutSection />} />
               <Route path="/about" element={<AboutSection />} />
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/skills" element={<Skills />} />
