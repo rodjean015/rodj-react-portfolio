@@ -7,6 +7,7 @@ import AboutSection from './components/AboutSection'; // Import AboutSection Com
 import ProjectsSection from './components/ProjectsSection'; // Import ProjectsSection Component
 import ContactSection from './components/ContactSection'; // Import ContactSection Component
 import LoadingPage from './components/LoadingPage'; // Import the LoadingPage component
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Update to v6
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,10 +16,10 @@ function App() {
   const [loading, setLoading] = useState(true); // Loading state for loading page
 
   const links = [
-    { href: "#about", label: "Personal Overview" },
-    { href: "#projects", label: "Developments" },
-    { href: "#skills", label: "Abilities" },
-    { href: "#contact", label: "Connect" },
+    { href: "/about", label: "Personal Overview" },
+    { href: "/projects", label: "Developments" },
+    { href: "/skills", label: "Abilities" },
+    { href: "/contact", label: "Connect" },
   ];
 
   useEffect(() => {
@@ -63,42 +64,50 @@ function App() {
   }
 
   return (
-    <div className={`${darkMode ? 'dark' : ''} min-h-screen`}>
-      <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 relative">
-        {/* Navbar Component */}
-        <Navbar
-          darkMode={darkMode}
-          handleDarkModeToggle={handleDarkModeToggle}
-          menuOpen={menuOpen}
-          handleMenuToggle={handleMenuToggle}
-          links={links}
-          showNavbar={showNavbar}
-        />
+    <Router basename="/rodj-react-portfolio">
+      <div className={`${darkMode ? 'dark' : ''} min-h-screen`}>
+        <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 relative">
+          {/* Navbar Component */}
+          <Navbar
+            darkMode={darkMode}
+            handleDarkModeToggle={handleDarkModeToggle}
+            menuOpen={menuOpen}
+            handleMenuToggle={handleMenuToggle}
+            links={links}
+            showNavbar={showNavbar}
+          />
 
-        <main>
-          {/* About Section Component */}
-          <AboutSection />
+          <main>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <AboutSection />
+                    <ProjectsSection />
+                    <Skills />
+                    <ContactSection />
+                  </>
+                }
+              />
+              <Route path="/about" element={<AboutSection />} />
+              <Route path="/projects" element={<ProjectsSection />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/contact" element={<ContactSection />} />
+            </Routes>
+          </main>
 
-          {/* Projects Section Component */}
-          <ProjectsSection />
-
-          {/* Skills Section Component */}
-          <Skills />
-
-          {/* Contact Section Component */}
-          <ContactSection />
-        </main>
-        
-        {/* Footer */}
-        <footer
-          className={`${
-            darkMode ? 'bg-gray-900' : 'bg-[#375e7e]'
-          } text-white p-5 text-center transition-colors duration-300`}
-        >
-          <p>&copy; 2024 Rodj Portfolio. All rights reserved.</p>
-        </footer>
+          {/* Footer */}
+          <footer
+            className={`${
+              darkMode ? 'bg-gray-900' : 'bg-[#375e7e]'
+            } text-white p-5 text-center transition-colors duration-300`}
+          >
+            <p>&copy; 2024 Rodj Portfolio. All rights reserved.</p>
+          </footer>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

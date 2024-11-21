@@ -57,7 +57,7 @@ const ContactSection = () => {
       </form>
 
       {/* Contact Details */}
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center" data-aos="fade-right">
         <p className="text-lg font-semibold">Email: <a href="mailto:rodjean694@gmail.com" className="text-blue-500 hover:text-blue-600">rodjean694@gmail.com</a></p>
         <p className="text-lg font-semibold mt-4">Phone: <a href="tel:+639071950638" className="text-blue-500 hover:text-blue-600">+6390719506384</a></p>
       </div>

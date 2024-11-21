@@ -1,29 +1,25 @@
-# Use an official Node runtime as a parent image
-FROM node:16 AS build
+# Step 1: Build Stage
+FROM node:18 AS build
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to install dependencies
-COPY package*.json ./
+COPY package.json ./
+COPY package-lock.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code to the container
-COPY . .
+COPY . ./
 
-# Build the app
 RUN npm run build
 
-# Use Nginx to serve the static files
-FROM nginx:alpine
+# Step 2: Production Stage
+FROM nginx:stable-alpine
 
-# Copy the built files from the previous image
+# Copy the build output from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port 80
+# Default port to be used by Nginx
 EXPOSE 80
 
-# Start Nginx server
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
