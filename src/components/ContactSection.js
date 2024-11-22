@@ -26,7 +26,7 @@ const ContactSection = () => {
       className="min-h-screen bg-gray-200 dark:bg-gray-800 py-10 flex flex-col justify-center items-center transition-colors duration-300"
     >
       <h2 className="text-3xl sm:text-4xl font-bold mb-5">Connect with me</h2>
-      <form ref={form} onSubmit={sendEmail} className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md w-full max-w-md space-y-4" data-aos="fade-up">
+      <form ref={form} onSubmit={sendEmail} className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md w-full max-w-md space-y-4" data-aos="fade-right">
         <input
           type="text"
           name="user_name"

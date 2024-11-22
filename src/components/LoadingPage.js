@@ -1,8 +1,16 @@
 import React from 'react';
+import useSpiderWebEffect from '../hooks/useSpiderWebEffect';
 
-const LoadingPage = () => {
+const LoadingPage = ({ darkMode }) => {
+  useSpiderWebEffect();
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-800 z-50">
+    <div
+        className={`flex items-center justify-center min-h-screen transition-colors duration-300 ${
+          darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
+        }`}
+      >
+      {/* Spider-Web Background Container */}
+      <div id="spider-web-container" className="spider-web-container"></div>
       <div className="relative w-24 h-24">
         <div className="absolute inset-0 border-4 border-[#375e7e] rounded-full animate-ripple"></div>
         <div className="absolute inset-0 border-4 border-[#375e7e] rounded-full animate-ripple delay-300"></div>

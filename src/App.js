@@ -46,6 +46,12 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
 
+    // Set dark mode automatically based on time
+    const currentHour = new Date().getHours();
+    if (currentHour >= 18 || currentHour < 6) {
+      setDarkMode(true); // Enable dark mode between 6 PM and 6 AM
+    }
+
     // Cleanup timer and event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -53,14 +59,14 @@ function App() {
     };
   }, []);
 
-  // Toggle dark mode
+  // Toggle dark mode manually
   const handleDarkModeToggle = () => setDarkMode(!darkMode);
 
   // Toggle mobile menu
   const handleMenuToggle = () => setMenuOpen(!menuOpen);
 
   if (loading) {
-    return <LoadingPage />;
+    return <LoadingPage darkMode={darkMode} />; // Pass darkMode to LoadingPage
   }
 
   return (
@@ -70,6 +76,7 @@ function App() {
           {/* Navbar Component */}
           <Navbar
             darkMode={darkMode}
+            setDarkMode={setDarkMode} // Provide setDarkMode for automatic time-based adjustment
             handleDarkModeToggle={handleDarkModeToggle}
             menuOpen={menuOpen}
             handleMenuToggle={handleMenuToggle}

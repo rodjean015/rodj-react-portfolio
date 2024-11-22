@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, handleDarkModeToggle, menuOpen, handleMenuToggle, li
         <div className="container mx-auto p-5 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <FaReact className="text-4xl text-cyan-400 animate-spin-slow" aria-hidden="true" /> {/* Animated React Icon */}
-            <h1 className="text-2xl font-bold text-white">RODJ</h1>
+            <h1 className="text-2xl font-bold text-white">RODJEAN</h1>
           </div>
           {/* Hamburger Menu for Mobile */}
           <div className="sm:hidden">
@@ -66,7 +66,7 @@ const Navbar = ({ darkMode, handleDarkModeToggle, menuOpen, handleMenuToggle, li
               darkMode ? 'bg-gray-900' : 'bg-[#375e7e]'
             } shadow-md transform transition-transform duration-500 ease-in-out z-20 sm:hidden`}
           >
-            <div className="p-5 flex flex-col space-y-4">
+            <div className="p-5 flex flex-col space-y-4" data-aos="fade-left">
               <button
                 onClick={handleMenuToggle}
                 className="text-2xl mb-5 self-end text-white"
