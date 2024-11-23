@@ -102,7 +102,8 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gray-200 dark:bg-gray-800 py-10 flex flex-col justify-center items-center transition-colors duration-300"
+      className="min-h-screen py-10 flex flex-col justify-center items-center transition-colors duration-300 
+                bg-gray-200 dark:animate-gradient dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-black"
     >
       <div className="container mx-auto p-5 sm:p-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Developments</h2>

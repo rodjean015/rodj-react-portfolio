@@ -29,15 +29,14 @@ const skills = [
   { icon: <SiLaravel className="text-red-600 text-2xl" />, label: 'Laravel' },
   { icon: <SiMysql className="text-blue-600 text-2xl" />, label: 'MySQL' },
   { icon: <SiMongodb className="text-green-600 text-2xl" />, label: 'MongoDB' },
-  // Alternatively, use PostgreSQL instead:
-  // { icon: <SiPostgresql className="text-blue-600 text-2xl" />, label: 'PostgreSQL' },
 ];
 
 function SkillsSection() {
   return (
     <section
       id="skills"
-      className="min-h-screen bg-white dark:bg-gray-900 py-10 flex flex-col justify-center items-center transition-colors duration-300"
+      className="min-h-screen py-10 flex flex-col justify-center items-center transition-colors duration-300 
+                bg-gray-200 dark:animate-gradient dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-900 dark:to-black"
     >
       <div className="container mx-auto p-5 sm:p-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Technologies</h2>

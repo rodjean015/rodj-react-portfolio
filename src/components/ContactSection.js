@@ -23,8 +23,9 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gray-200 dark:bg-gray-800 py-10 flex flex-col justify-center items-center transition-colors duration-300"
-    >
+        className="min-h-screen py-10 flex flex-col justify-center items-center transition-colors duration-300 
+                bg-gray-200 dark:animate-gradient dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-black"
+      >
       <h2 className="text-3xl sm:text-4xl font-bold mb-5">Connect with me</h2>
       <form ref={form} onSubmit={sendEmail} className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md w-full max-w-md space-y-4" data-aos="fade-right">
         <input
@@ -50,7 +51,7 @@ const ContactSection = () => {
         />
         <button
           type="submit"
-          className="text-white bg-[#375e7e] hover:bg-gray-800 dark:hover:bg-[#375e7e] dark:bg-gray-800 py-2 px-4 rounded-md w-full hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 transition-all duration-300"
+          className="text-white bg-[#375e7e] hover:bg-gray-800 dark:hover:bg-[#375e7e] dark:bg-gray-800 py-2 px-4 rounded-md w-full hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-black transition-all duration-300"
         >
           Send Message
         </button>
