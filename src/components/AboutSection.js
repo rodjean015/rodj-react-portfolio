@@ -1,6 +1,5 @@
 // AboutSection.js
-import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import profilePic from './assets/profile_pic.png';
 import useSpiderWebEffect from '../hooks/useSpiderWebEffect'; // Adjust the path as necessary
 
@@ -29,7 +28,7 @@ const AboutSection = () => {
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5">Overview</h2>
         <p className="text-base sm:text-lg max-w-2xl mx-auto sm:mx-0 mb-6">
-          Hi, I'm an experienced software engineer specializing in developing machine learning and artificial intelligence solutions. Currently, I am expanding my expertise in front-end and back-end web development to build modern, responsive, and interactive user experiences.
+          Hi, I'm an experienced software engineer with a strong background in developing machine learning and artificial intelligence solutions. I also specialize in front-end and back-end web development, as well as mobile development using frameworks like Ionic. My focus is on building modern, responsive, and interactive user experiences across both web and mobile platforms.
         </p>
 
         {/* Social Media Links */}
@@ -37,7 +36,7 @@ const AboutSection = () => {
           {[
             { href: 'https://github.com/rodjean015', icon: <FaGithub size={32} /> },
             { href: 'https://linkedin.com/in/rodjean-verzosa-326a7b255', icon: <FaLinkedin size={32} /> },
-            { href: '/', icon: <FaTwitter size={32} /> },
+            { href: 'https://www.facebook.com/rodjean15/', icon: <FaFacebook size={32} /> },
           ].map((link, index) => (
             <a
               key={index}

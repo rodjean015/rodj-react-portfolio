@@ -1,14 +1,37 @@
 import React, { useState } from 'react';
-import { FaPython, FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import icons from React Icons
-import { SiFlask, SiArduino, SiTensorflow, SiScikitlearn, SiOpencv } from 'react-icons/si';
+import { FaPython, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { SiFlask, SiArduino, SiTensorflow, SiScikitlearn, SiOpencv, SiNodedotjs, SiIonic, SiDotnet, SiNestjs, SiGooglecloud, SiLaravel, SiNextdotjs, SiReact } from 'react-icons/si';
 import pokerAI from './assets/poker_ai.png';
 import pokerAPI from './assets/poker_api.png';
 import blackjackBot from './assets/blackjack_bot.png';
 import baccaratBot from './assets/baccarat_bot.png';
 import lineageBot from './assets/lineage_bot.png';
 import lineageLogs from './assets/lineage_logs.png';
+import rider1 from './assets/rider1.png';
+import rider2 from './assets/rider2.png';
+import driver1 from './assets/driver1.png';
+import driver2 from './assets/driver2.png';
+import ipickWeb from './assets/ipick-web.png';
 
 const projects = [
+  {
+    title: "iPick App",
+    description: "A startup ride hailing company in PH.",
+    technologies: ["node", "ionic", "react", ".net", "nest", "aws", "google-cloud", "python", "laravel"],
+    images: [rider1, rider2],
+  },
+  {
+    title: "iPick Driver App",
+    description: "Driver application for iPick.",
+    technologies: ["node", "ionic", "react", ".net", "nest", "aws", "google-cloud", "python", "laravel"],
+    images: [driver1, driver2],
+  },
+  {
+    title: "iPick Website",
+    description: "A startup ride hailing company in PH.",
+    technologies: ["node", "next"],
+    images: [ipickWeb],
+  },
   {
     title: "Poker AI",
     description: "A bot that can play different strategies in poker.",
@@ -53,7 +76,7 @@ const ProjectsSection = () => {
 
   const handleViewProject = (project) => {
     setSelectedProject(project);
-    setCurrentSlide(0); // Start at the first image when opening the modal
+    setCurrentSlide(0);
   };
 
   const closeModal = () => {
@@ -93,6 +116,22 @@ const ProjectsSection = () => {
           return <SiScikitlearn key={index} className="text-blue-400 text-2xl ml-3" />;
         case 'opencv':
           return <SiOpencv key={index} className="text-red-500 text-2xl ml-3" />;
+        case 'node':
+          return <SiNodedotjs key={index} className="text-green-500 text-2xl ml-3" />;
+        case 'ionic':
+          return <SiIonic key={index} className="text-blue-500 text-2xl ml-3" />;
+        case '.net':
+          return <SiDotnet key={index} className="text-blue-500 text-2xl ml-3" />;
+        case 'nest':
+          return <SiNestjs key={index} className="text-red-500 text-2xl ml-3" />;
+        case 'google-cloud':
+          return <SiGooglecloud key={index} className="text-blue-500 text-2xl ml-3" />;
+        case 'laravel':
+          return <SiLaravel key={index} className="text-red-500 text-2xl ml-3" />;
+        case 'next':
+          return <SiNextdotjs key={index} className="text-gray-500 text-2xl ml-3" />;
+        case 'react':
+          return <SiReact key={index} className="text-blue-500 text-2xl ml-3" />;
         default:
           return null;
       }

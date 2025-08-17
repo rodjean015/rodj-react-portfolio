@@ -97,11 +97,10 @@ function App() {
 
           {/* Footer */}
           <footer
-            className={`${
-              darkMode ? 'bg-black' : 'bg-[#375e7e]'
-            } text-white p-5 text-center transition-colors duration-300`}
+            className={`${darkMode ? 'bg-black' : 'bg-[#375e7e]'
+              } text-white p-5 text-center transition-colors duration-300`}
           >
-            <p>&copy; 2024 Rodj Portfolio. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Rodj Portfolio. All rights reserved.</p>
           </footer>
         </div>
       </div>
