@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rodj-react-portfolio/static/css/main.5763db98.css",
-    "main.js": "/rodj-react-portfolio/static/js/main.614ef577.js",
+    "main.js": "/rodj-react-portfolio/static/js/main.89e13a79.js",
     "static/media/ipick-web.png": "/rodj-react-portfolio/static/media/ipick-web.36ad01704f85ea928d86.png",
     "static/media/profile_pic.png": "/rodj-react-portfolio/static/media/profile_pic.f6fab6265f4bcbc574ba.png",
     "static/media/rider2.png": "/rodj-react-portfolio/static/media/rider2.77ee845e2641b1718494.png",
@@ -16,10 +16,10 @@
     "static/media/poker_api.png": "/rodj-react-portfolio/static/media/poker_api.d05659e89cb0fc7d81fe.png",
     "index.html": "/rodj-react-portfolio/index.html",
     "main.5763db98.css.map": "/rodj-react-portfolio/static/css/main.5763db98.css.map",
-    "main.614ef577.js.map": "/rodj-react-portfolio/static/js/main.614ef577.js.map"
+    "main.89e13a79.js.map": "/rodj-react-portfolio/static/js/main.89e13a79.js.map"
   },
   "entrypoints": [
     "static/css/main.5763db98.css",
-    "static/js/main.614ef577.js"
+    "static/js/main.89e13a79.js"
   ]
 }
